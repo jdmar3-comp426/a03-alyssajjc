@@ -4,6 +4,7 @@ import { getSum, getMedian, getStatistics } from "./medium/medium_1.js";
 import { allCarStats } from "./medium/medium_2.js";
 import mpg_data from "./medium/data/mpg_data.js";
 import { searchByYear, searchHighPower, searchName } from "./medium/medium_3.js";
+import { repeat } from './spicy/spicy_9.js';
 
 // mild 1 tests
 /* console.log(sumToString(1,2));
@@ -42,6 +43,9 @@ console.log(getStatistics(mpg_data.map(function(item) { return item['year']})));
 console.log(mpg_data.filter(current => current.hybrid == true).length); */
 
 // medium 3 tests
-console.log(searchHighPower(mpg_data, 600, 500));
+/* console.log(searchHighPower(mpg_data, 600, 500));
 console.log(searchByYear(mpg_data, [2010, 2012]));
-console.log(searchName(mpg_data, 'Audi'));
+console.log(searchName(mpg_data, 'Audi')); */
+
+// spicy 9 tests
+console.log(repeat(sumToString, 3, 1, 2));
