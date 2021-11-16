@@ -24,8 +24,9 @@ console.log(obj); */
 
 // medium 1 tests
 console.log(getSum([1,2,3])); // 6
-let array = [3,2,5,6,2,7,4,2,7,5];
+let array = [7,4,2,7,3,2,5,6,2,5]; 
+console.log(array.sort(function(a,b) { return a-b }));
 console.log(getMedian(array)); // 4.5
-//console.log(getMedian([7, 2, 3, 5 , 1])); // 3
-console.log(getMedian([7, 7, 3, 2, 8, 5, 4])); // 5
-console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
+console.log(getMedian([7, 2, 3, 5 , 1])); // 3
+console.log(getMedian([7, 7, 3, 2, 8, 5, 4, 18, 1])); // 5
+//console.log(getStatistics([3,2,4,5,5,5,2,6,7]));
