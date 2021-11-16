@@ -66,7 +66,7 @@ export function getStatistics(array) {
     ret_object.min = Math.min(...array);
     ret_object.max = Math.max(...array);
     ret_object.variance = variance(array, ret_object.mean);
-    ret_object.st_dev = Math.sqrt(ret_object.variance);
+    ret_object.standard_deviation = Math.sqrt(ret_object.variance);
     return ret_object;
 }
 
