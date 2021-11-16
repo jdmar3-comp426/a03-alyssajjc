@@ -3,7 +3,7 @@ import { identifyVariable, identifyArray, removeKey, removeKeyNonDestructive, re
 import { getSum, getMedian, getStatistics } from "./medium/medium_1.js";
 import { allCarStats } from "./medium/medium_2.js";
 import mpg_data from "./medium/data/mpg_data.js";
-import { searchByYear, searchHighPower } from "./medium/medium_3.js";
+import { searchByYear, searchHighPower, searchName } from "./medium/medium_3.js";
 
 // mild 1 tests
 /* console.log(sumToString(1,2));
@@ -44,3 +44,4 @@ console.log(mpg_data.filter(current => current.hybrid == true).length); */
 // medium 3 tests
 console.log(searchHighPower(mpg_data, 600, 500));
 console.log(searchByYear(mpg_data, [2010, 2012]));
+console.log(searchName(mpg_data, 'Audi'));
