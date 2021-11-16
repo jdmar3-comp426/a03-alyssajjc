@@ -27,14 +27,15 @@ export function getSum(array) {
  */
 export function getMedian(array) {
     let sorted = array.sort();
-    let len = array.length;
-    if (len % 2 == 0) {
-        let a = array[len/2];
-        let b = array[len/2 - 1];
-        return (a + b)/2;   
-    } else if (len % 2 == 1) {
-        return array[len/2 - 0.5];
+    let mid = Math.ceil(array.length / 2);
+    let median = 0;
+    if (array.length % 2 == 0) {
+        median = sorted[mid] + sorted[mid-1] / 2;
+    } 
+    if (array.length % 2 == 1) {
+        median = sorted[mid-1];
     }
+    return median;
 }
 
 /**
