@@ -54,3 +54,5 @@ console.log(multiplyBy(10)(20));
 console.log(tenTimesFifty());
 let arr = [1, 3, 5, 6];
 console.log(allEvensAreOdd(arr));
+let arar = [0, 3, 4, 5, 3];
+console.log(allEvensAreOdd(arar));
