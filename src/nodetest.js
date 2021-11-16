@@ -3,6 +3,7 @@ import { identifyVariable, identifyArray, removeKey, removeKeyNonDestructive, re
 import { getSum, getMedian, getStatistics } from "./medium/medium_1.js";
 import { allCarStats } from "./medium/medium_2.js";
 import mpg_data from "./medium/data/mpg_data.js";
+import { searchHighPower } from "./medium/medium_3.js";
 
 // mild 1 tests
 /* console.log(sumToString(1,2));
@@ -34,8 +35,11 @@ console.log(getMedian([7, 7, 3, 2, 8, 5, 4, 18, 1])); // 5
 //console.log(getStatistics([3,2,4,5,5,5,2,6,7])); */
 
 // medium 2 tests
-console.log(allCarStats);
+//console.log(allCarStats);
 /* console.log(mpg_data.length);
 console.log(mpg_data.reduce((previous, current) => previous + current['city_mpg'], 0) / mpg_data.length);
 console.log(getStatistics(mpg_data.map(function(item) { return item['year']})));
 console.log(mpg_data.filter(current => current.hybrid == true).length); */
+
+// medium 3 tests
+console.log(searchHighPower(mpg_data, 600, 500));
