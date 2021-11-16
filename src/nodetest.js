@@ -4,7 +4,7 @@ import { getSum, getMedian, getStatistics } from "./medium/medium_1.js";
 import { allCarStats } from "./medium/medium_2.js";
 import mpg_data from "./medium/data/mpg_data.js";
 import { searchByYear, searchHighPower, searchName } from "./medium/medium_3.js";
-import { repeat } from './spicy/spicy_9.js';
+import { multiplyBy, repeat, repeatDemo, tenTimes, tenTimesFifty } from './spicy/spicy_9.js';
 
 // mild 1 tests
 /* console.log(sumToString(1,2));
@@ -49,3 +49,6 @@ console.log(searchName(mpg_data, 'Audi')); */
 
 // spicy 9 tests
 console.log(repeat(sumToString, 3, 1, 2));
+//repeatDemo();
+console.log(multiplyBy(10)(20));
+console.log(tenTimesFifty());
