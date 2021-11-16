@@ -1,5 +1,5 @@
 import { sumToString, getIncreasingArray, maxAndMin, countArray } from "./mild/mild_1.js";
-import { identifyVariable, identifyArray } from "./mild/mild_2.js";
+import { identifyVariable, identifyArray, removeKey, removeKeyNonDestructive, removeKeys } from "./mild/mild_2.js";
 
 // mild 1 tests
 /* console.log(sumToString(1,2));
